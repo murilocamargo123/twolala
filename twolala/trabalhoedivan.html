@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BibliOS</title>
+</head>
+<body>
+
+    <h1>BibliOS</h1>
+    <h2>Bem-vindo de volta</h2>
+    <p>Acesse o sistema da biblioteca</p>
+
+    <form>
+        <label>Nome de usuário:</label><br>
+        <input type="text" name="usuario"><br><br>
+
+        <label>Senha:</label><br>
+        <input type="password" name="senha"><br><br>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <hr>
+
+    <h2>Menu Inicial</h2>
+
+    <a href="#livros">Livros</a><br>
+    <a href="#cadastro-livro">Cadastrar Livro</a><br>
+    <a href="#cadastro-cliente">Cadastrar Cliente</a><br>
+    <a href="#emprestimo">Empréstimo de Livro</a><br>
+    <a href="#atrasados">Livros Atrasados</a><br>
+
+    <hr>
+
+    <h2 id="livros">Indicações de Livros</h2>
+
+    <label>Pesquisar livro:</label><br>
+    <input type="text" name="pesquisa">
+    <button type="button">Pesquisar</button>
+
+    <table border="1">
+        <tr>
+            <th>Livro</th>
+            <th>Autor</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>A Hora da Estrela</td>
+            <td>Clarice Lispector</td>
+            <td>Disponível</td>
+        </tr>
+
+        <tr>
+            <td>Dom Casmurro</td>
+            <td>Machado de Assis</td>
+            <td>Disponível</td>
+        </tr>
+
+        <tr>
+            <td>O Pequeno Príncipe</td>
+            <td>Antoine de Saint-Exupéry</td>
+            <td>Emprestado</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2 id="cadastro-livro">Cadastro de Livro</h2>
+
+    <form>
+        <label>Nome do livro:</label><br>
+        <input type="text" name="livro"><br><br>
+
+        <label>Autor:</label><br>
+        <input type="text" name="autor"><br><br>
+
+        <label>Leitores do livro:</label><br>
+        <input type="text" name="leitores"><br><br>
+
+        <label>Gênero:</label><br>
+        <input type="text" name="genero"><br><br>
+
+        <label>ISBN:</label><br>
+        <input type="text" name="isbn"><br><br>
+
+        <label>Capa do livro:</label><br>
+        <input type="file" name="capa" accept="image/*"><br><br>
+
+        <label>Status:</label><br>
+        <select name="status">
+            <option>Disponível</option>
+            <option>Emprestado</option>
+            <option>Inativo</option>
+        </select><br><br>
+
+        <button type="submit">Cadastrar Livro</button>
+    </form>
+
+    <hr>
+
+    <h2 id="cadastro-cliente">Cadastrar Cliente</h2>
+
+    <form>
+        <label>Nome do cliente:</label><br>
+        <input type="text" name="nome"><br><br>
+
+        <label>Telefone:</label><br>
+        <input type="tel" name="telefone"><br><br>
+
+        <label>Endereço:</label><br>
+        <input type="text" name="endereco"><br><br>
+
+        <label>Data de nascimento:</label><br>
+        <input type="date" name="nascimento"><br><br>
+
+        <label>Foto 3x4:</label><br>
+        <input type="file" name="foto" accept="image/*"><br><br>
+
+        <button type="submit">Cadastrar Cliente</button>
+    </form>
+
+    <hr>
+
+    <h2 id="emprestimo">Empréstimo de Livro</h2>
+
+    <form>
+        <label>Nome do cliente:</label><br>
+        <input type="text" name="cliente"><br><br>
+
+        <label>Data do empréstimo:</label><br>
+        <input type="date" name="data-emprestimo"><br><br>
+
+        <label>Data de devolução:</label><br>
+        <input type="date" name="data-devolucao"><br><br>
+
+        <label>ID do livro:</label><br>
+        <input type="number" name="id-livro"><br><br>
+
+        <button type="submit">Registrar Empréstimo</button>
+    </form>
+
+    <hr>
+
+    <h2 id="atrasados">Livros Atrasados</h2>
+
+    <label>Pesquisar livro:</label><br>
+    <input type="text" name="pesquisa-atrasados">
+    <button type="button">Pesquisar</button>
+
+    <table border="1">
+        <tr>
+            <th>Livro</th>
+            <th>Cliente</th>
+            <th>Data de devolução</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>A Hora da Estrela</td>
+            <td>Maria Silva</td>
+            <td>01/10/2026</td>
+            <td>Atrasado</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <p>BibliOS - Sistema de Gestão de Biblioteca</p>
+
+</body>
+</html>
+
+
+
